@@ -16,17 +16,19 @@ private App matcher;
  storedCredentials.setProperty("ram", "3025");
  matcher = new App(storedCredentials);
  }
+ 
  @Test
  public void testMatchingCredentials() {
- assertTrue(matcher.matchCredentials("ram", "3025"));
+ assertTrue(matcher.matchCredentials("RAM", "3000"));
  }
-
+ 
  @Test
  public void testNonMatchingCredentials() {
  assertFalse(matcher.matchCredentials("user1", "wrongId"));
  }
+ 
  @Test
- public void testUsernameNotFound() {
+ public void testnameNotFound() {
  assertFalse(matcher.matchCredentials("nonexistentname",
 "Id"));
 }

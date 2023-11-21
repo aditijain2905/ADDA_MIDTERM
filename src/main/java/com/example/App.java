@@ -27,7 +27,7 @@ storedCredentials.setProperty("ram", "3025");
  System.out.print("Enter the Id: ");
  inputPassword = scan.next();
  if (matcher.matchCredentials(inputUsername, inputPassword)) {
- System.out.println("Valid name and Id" + "\nLogin successful!");
+ System.out.println("Valid name and Id");
  } else {
  System.out.println("Invalid name or Id.");
  }
