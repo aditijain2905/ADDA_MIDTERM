@@ -19,7 +19,7 @@ private App matcher;
  
  @Test
  public void testMatchingCredentials() {
- assertTrue(matcher.matchCredentials("RAM", "3000"));
+ assertTrue(matcher.matchCredentials("ram", "3025"));
  }
  
  @Test
